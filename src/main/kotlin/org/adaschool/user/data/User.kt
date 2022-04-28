@@ -1,5 +1,6 @@
 package org.adaschool.user.data
 
+import org.adaschool.user.controller.dto.UserDto
 import java.util.*
 import javax.persistence.*
 
@@ -14,6 +15,7 @@ data class User(
 ) {
 
     constructor() : this(null, "", "", Date())
+    constructor(userDto: UserDto) : this(null, userDto.name, userDto.email, Date())
 
 
 }
