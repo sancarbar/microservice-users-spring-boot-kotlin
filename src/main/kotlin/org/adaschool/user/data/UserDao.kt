@@ -1,4 +1,4 @@
-package data
+package org.adaschool.user.data
 
 import org.springframework.data.repository.CrudRepository
 
